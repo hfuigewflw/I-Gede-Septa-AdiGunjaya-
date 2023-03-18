@@ -1,2 +1,2 @@
 # I-Gede-Septa-AdiGunjaya-
-Comp
+National Coding  Compettion

@@ -1,49 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="Translate.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <title>Document</title>
+	<title>Website Translate</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="translate.js"></script>
 </head>
 <body>
-   <header>
-         <h1>Translate</h1>
-   </header>
-   <section>
-    <div class="from-group">
-        <label for="source">source</label>
-        <select class="form-control" id="source">
-            <option value="en">english</option>
-            <option value="id">indonesia</option>
-        </select>
-     </div>
-     <div class="from-group">
-        <label for="target">target</label>
-        <select class="form-control" id="target">
-            <option value="en">english</option>
-            <option value="id">indonesia</option>
-        </select>
-     </div>
-     <div class=" form-group">
-        <label for="source-text">source text</label>
-        <textarea class="form-control" id="source-text" rows="5"></textarea>
-
-     </div>
-     <div>
-        <label for="target-text">Target text</label>
-        <textarea class="form-control" id="target-text" rows="5" readonly>
-
-        </textarea>
-     </div>
-     <button class=" btn btn-primary" id="Translate">Translate</button>
-       
-   </section>
-   <footer>
-        <p>&copy; 2023 WKWKW</p>
-   </footer>
+	<header>
+		<h1>Website Translate</h1>
+	</header>
+	<section>
+		<div id="translate-form">
+			<div class="form-group">
+				<label for="source">Bahasa Asal:</label>
+				<select id="source">
+					<option value="en">Inggris</option>
+					<option value="id">Indonesia</option>
+					<option value="ja">Jepang</option>
+					<option value="ko">Korea</option>
+					<option value="zh-CN">Mandarin (Sederhana)</option>
+					<option value="zh-TW">Mandarin (Tradisional)</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="target">Bahasa Tujuan:</label>
+				<select id="target">
+					<option value="en">Inggris</option>
+					<option value="id">Indonesia</option>
+					<option value="ja">Jepang</option>
+					<option value="ko">Korea</option>
+					<option value="zh-CN">Mandarin (Sederhana)</option>
+					<option value="zh-TW">Mandarin (Tradisional)</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="source-text">Teks Asal:</label>
+				<textarea id="source-text"></textarea>
+			</div>
+			<button id="translate">Terjemahkan</button>
+		</div>
+		<div id="translate-result">
+			<div class="form-group">
+				<label for="target-text">Teks Hasil:</label>
+				<textarea id="target-text" readonly></textarea>
+			</div>
+			<button id="speak">Bicarakan</button>
+		</div>
+	</section>
 </body>
 </html>
